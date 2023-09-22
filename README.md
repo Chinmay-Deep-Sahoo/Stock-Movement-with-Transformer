@@ -22,4 +22,26 @@ A transformer represents a sophisticated deep-learning model that leverages self
 <p align = "center">
 <img width="393" alt="transformers (1)" src="https://github.com/Chinmay-Deep-Sahoo/Stock-Movement-with-Transformer/assets/118956460/ba45bbcf-3e08-4645-b0b5-b829a9f76912">
 </p>
-The transformer consists of various blocks the details of each are provided in the resources section of this repo. The code of all the blocks is provided in 'Blocks.py', and the transformer model is provided in 'Transformer_Model.ipynb' notebook.
+The transformer consists of various blocks the details of each are provided in the resources section of this repo. The code of all the blocks is provided in <b>'Blocks.py'</b>, and the transformer model is provided in <b>'Transformer_Model.ipynb'</b> notebook.
+
+### Self-Attention Block
+Self-attention in a transformer model enables it to dynamically focus on different segments of the input sequence when making predictions. This mechanism allows for a comprehensive contextual understanding of the entire sequence while encoding individual input elements. Self-attention introduces the concepts of Keys, Queries, and Values, which the transformer model learns during its training process. To grasp the concept at a high level:
+*   <b>Queries</b> can be likened to asking questions, such as, was the news positive? or, were a lot of shares traded the day before yesterday?
+*   <b>Keys</b> examine the input data sequence and identify which data point best corresponds to the query.
+*   <b>Values</b> dictate how the data point should be represented in a more meaningful manner.
+
+### Multi-Head Attention Block
+Multi-head attention is a concept closely related to self-attention, with a significant distinction lying in its utilization of multiple self-attention blocks, often referred to as 'heads.' These heads operate independently and, once their computations are complete, their outputs are concatenated together.
+<p align = "center">
+<img width="393" alt="transformers (1)" src="https://github.com/Chinmay-Deep-Sahoo/Stock-Movement-with-Transformer/assets/118956460/f760fdf4-ede6-46fd-8649-4950def105cf">
+</p>
+
+
+# Resources
+The following resources were consulted when seeking assistance with specific sections of Transformers:
+*   Transformers overview: [Transformer Neural Networks, ChatGPT's foundation, Clearly Explained!!!](https://www.youtube.com/watch?v=zxQyTK8quyY)
+*   Masked Attention Layer: [Attention is all you need. A Transformer Tutorial: 7. Decoder Masked Multihead Attention](https://www.youtube.com/watch?v=SyWMFPFvsd0)
+*   Positional Encoding: [Attention is all you need. A Transformer Tutorial: 5. Positional Encoding](https://www.youtube.com/watch?v=LSCsfeEELso)
+### Additional resources to learn about transformers:
+*   [Sequence Models - deeplearning.ai](https://www.coursera.org/learn/nlp-sequence-models?)
+*   Medium article, Nikhil Verma - [Query, Key and Value in Attention mechanism](https://lih-verma.medium.com/query-key-and-value-in-attention-mechanism-3c3c6a2d4085)
