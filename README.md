@@ -14,5 +14,12 @@ Data Range: <b>2008-08-08</b> to <b>2016-07-01</b>
 * Sentiment Analysis
   * Sentiment analysis of each Reddit news headline is conducted using a pre-trained NLP model known as [FinBert](https://huggingface.co/ProsusAI/finbert).
   * This analysis yields positive, negative, and neutral sentiment scores for each news item.
-  * The sentiment analysis process is documented in the 'Sentiment.ipynb' notebook.
+  * The sentiment analysis process is documented in the <b>'Sentiment.ipynb'</b> notebook.
   * The resulting sentiment data is saved as a PyTorch file ('Data.pt') for future use.
+
+# Transformer Architecture
+A transformer represents a sophisticated deep-learning model that leverages self-attention mechanisms to assign varying degrees of importance to individual segments of input data. It finds prominent application in domains such as natural language processing and other scenarios involving sequential data, as exemplified in this context by time series analysis. They are the next generation of RNN and LSTM, introduced in 2017 in the research paper, [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf).
+<p align = "center">
+<img width="393" alt="transformers (1)" src="https://github.com/Chinmay-Deep-Sahoo/Stock-Movement-with-Transformer/assets/118956460/ba45bbcf-3e08-4645-b0b5-b829a9f76912">
+</p>
+The transformer consists of various blocks the details of each are provided in the resources section of this repo. The code of all the blocks is provided in 'Blocks.py', and the transformer model is provided in 'Transformer_Model.ipynb' notebook.
