@@ -8,7 +8,7 @@ Data Range: <b>2008-08-08</b> to <b>2016-07-01</b>
 
 ### Pre Processing Data
 *  Initial Data Preparation
-    * To prepare the news data for analysis, an initial cleaning step is performed.
+    * To prepare the news data for analysis, an initial cleaning step is performed to remove unessential characters and fill nan values.
     * As Reddit news is in string format, further preprocessing is essential to convert it into numerical data suitable for training the transformer model.
 
 * Sentiment Analysis
